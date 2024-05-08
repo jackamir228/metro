@@ -10,7 +10,7 @@ import java.util.List;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @ToString
 //Линия метро - содержит цвет линии, станции линии, ссылку на метро в которой линия находится
-public abstract class Line {
+public class Line {
     Color color;
     List<Station> stations;
     Metro metro;
@@ -19,5 +19,9 @@ public abstract class Line {
         this.color = color;
         this.stations = stations;
         this.metro = metro;
+    }
+
+    public Line(Color color) {
+        this.color = color;
     }
 }
