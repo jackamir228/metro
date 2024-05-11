@@ -1,4 +1,4 @@
-package com.example.metro;
+package com.example.metro.station;
 
 import lombok.AccessLevel;
 import lombok.Getter;
